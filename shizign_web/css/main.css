@@ -1,0 +1,561 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
+
+/*Colors*/
+:root {
+    scroll-behavior: smooth;
+    /*Colors*/
+    --shiz_lavender: #BA93DF;
+    --shiz_orange: #FF582D;
+    --shiz_blue: #444795;
+    --shiz_yellow: #FCD06B;
+    --shiz_pink: #F55995;
+    --shiz_mint: #00B694;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    margin: auto auto;
+    padding: 0px 72px;
+    color: #000;
+}
+
+.container-contacts {
+    margin: auto auto;
+    padding: 0px 72px;
+    color: #000;
+}
+
+.container-scroll {
+    max-width: 1920px;
+    margin: auto auto;
+    padding: 0px 55px 0px 72px;
+    color: #000;
+}
+
+/*Nabigation*/
+
+.nav {
+    margin-bottom: auto;
+    padding: 29px 0px 5px 0px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 256px;
+    height: 46px;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 48px;
+    row-gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    font-weight: 400;
+}
+
+.nav-list__item--active {
+    color: var(--shiz_pink);
+    cursor: default
+}
+
+.nav-list__item {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.48px;
+    color: #000;
+
+    transition: 0.2s;
+
+    text-decoration: none
+}
+
+.nav-list__item:hover {
+    color: var(--shiz_lavender);
+    transition: 0.2s;
+}
+
+.nav-list__item:active {
+    color: var(--shiz_blue);
+    transition: 0.2s;
+}
+
+.header {
+    padding: 72px 0px 0px 0px;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -1.44px;
+    cursor: default;
+}
+
+.btn {
+    z-index: 999;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    padding: 0px 72px;
+    top: 892px;
+}
+
+.button {
+    z-index: 101;
+    align-items: center;
+    padding: 6px 30px;
+    background-color: var(--shiz_orange);
+    border-radius: 999px 999px 999px 999px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 171.429% */
+    letter-spacing: -0.42px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--shiz_lavender);
+    transition: 0.3s;
+}
+
+.button:active {
+    background-color: var(--shiz_blue);
+    transition: 0.3s;
+}
+
+/*CASES*/
+
+.hov-title:hover {
+    opacity: 1;
+    transition: 0.6s
+}
+
+/*LOCOMOTIVE*/
+
+.locomotive {
+    display: flex;
+    justify-content: center;
+    margin: 60px 55px 0px 72px;
+    height: auto;
+    position: relative;
+}
+
+.locomotive img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.polka {
+    max-height: 700px;
+    border-radius: 8px;
+}
+
+.hov-title-locomotive {
+    height: 100%;
+    width: 100%;
+    z-index: 101;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -1.44px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.hov-title-locomotive:hover {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+/*================================================*/
+
+.section {
+    margin: 8px 55px 0px 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: left;
+    row-gap: 8px;
+    column-gap: 8px;
+}
+
+.section-container {
+    position: relative;
+}
+
+.section-container img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 700px;
+    top: 0;
+    left: 0;
+}
+
+.case-border {
+    border: 1px solid #EDEDED;
+}
+
+.hov-title {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -1.44px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.hov-title:hover {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.stub {
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -1.44px;
+}
+
+.stub-link {
+    color: #000;
+    transition: 0.3s;
+}
+
+.stub-link:hover {
+    color: var(--shiz_lavender);
+    transition: 0.3s;
+}
+
+
+/*DIVIDER*/
+
+.divider {
+    display: block;
+    height: 200px;
+    color: #FFF;
+}
+
+/*FUTTER*/
+
+.futter {
+    width: 100%;
+    margin-top: auto;
+    position: absolute;
+}
+
+.fut {
+    padding: 0px 72px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fut-scroll {
+    padding: 0px 55px 0px 72px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txts {
+    width: 408px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+    letter-spacing: -0.4px;
+    cursor: default;
+}
+
+.creators {
+    padding-bottom: 8px;
+}
+
+.tgc {
+    width: 408px;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mirc {
+    width: 408px;
+    display: flex;
+    justify-content: right;
+}
+
+.tg-logo {
+    width: 94px;
+    height:  94px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.tg-logo:hover {
+    width: 104px;
+    height: 104px;
+    cursor: pointer;
+    transition: 0.4s;
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.10));
+}
+
+/*CONTACT-PAGE*/
+
+.contacts-title {
+    margin-top: 200px;
+    color: var(--black, #000);
+    font-family: IBM Plex Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px; /* 129.167% */
+    letter-spacing: -1.44px;
+    cursor: default;
+    margin-bottom: 0px;
+}
+
+.contacts-link {
+    margin-bottom: 338px;
+    color: var(--shiz_blue);
+    font-family: IBM Plex Sans;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124px; /* 129.167% */
+    letter-spacing: -2.88px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contacts-link:hover {
+    color: var(--shiz_lavender);
+    transition: 0.3s;
+}
+
+.contacts-link:active {
+    color: var(--shiz_mint);
+    transition: 0.3s;
+}
+
+/*ITSWE-PAGE*/
+
+.tag-cont {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    height: auto;
+    padding: 4px 55px 0px 72px;
+}
+
+.tagline {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pref-item {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1168px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mis-title {
+    color: var(--shiz_pink, #F55995);
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124px; /* 129.167% */
+    letter-spacing: -2.88px;
+}
+
+.mis-txt {
+    color:#000;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -1.44px;
+}
+
+.ta-title {
+    color: var(--shiz_lavender);
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124px; /* 129.167% */
+    letter-spacing: -2.88px;
+}
+
+.mis-txt {
+    color:#000;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -1.44px;
+}
+
+.mis-txt orange {
+    color:var(--shiz_orange);
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -1.44px;
+}
+
+.mis-txt lavender {
+    color:var(--shiz_lavender);
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -1.44px;
+}
+
+.mis-txt mint {
+    color:var(--shiz_mint);
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -1.44px;
+}
+
+.phil-title {
+    color: var(--shiz_yellow);
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124px; /* 129.167% */
+    letter-spacing: -2.88px;
+}
+
+.prefs {
+    padding: 400px 0px 0px;
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+
+.pref-container {
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    row-gap: 400px;
+    position: relative;
+}
+
+.command-title {
+    color: var(--shiz_blue);
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124px; /* 129.167% */
+    letter-spacing: -2.88px;
+}
+
+.tape img {
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    margin-top: -180px;
+    position: absolute;
+    display: block;
+    justify-content: center;
+}
+
+.filler {
+    height: 450px;
+}
+
