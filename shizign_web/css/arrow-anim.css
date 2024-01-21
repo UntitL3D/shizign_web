@@ -1,0 +1,52 @@
+// Default document styling
+@import 'https://fonts.googleapis.com/css?family=Lato'
+
+html
+  height 100%
+  font-size 16px
+  
+
+body
+  min-height 100%
+  font-family Lato
+  color #fff
+  background-color fff
+  display flex
+  justify-content center
+  align-items center
+  
+// Arrow
+
+.arrow
+  width 1.5rem
+  height 1.5rem
+  display inline-block
+  position relative
+  margin 0 1rem
+
+  span
+    background-color #F55995
+    top .5rem
+    position absolute
+    width .99rem
+    height .3rem
+    border-radius 430px
+    display inline-block
+    transition all .2s ease
+
+    &:first-of-type
+      left 0
+      transform rotate(45deg)
+
+    &:last-of-type
+      right 0
+      transform rotate(-45deg)
+
+  &.active
+
+    span
+      &:first-of-type
+        transform rotate(-45deg)
+
+      &:last-of-type
+        transform rotate(45deg)
